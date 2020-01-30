@@ -1,0 +1,23 @@
+P2P Messaging system
+
+Requirements
+
+cmake version 3.5
+
+How to run server
+
+> cd server
+> mkdir build
+> cd build
+> cmake ../
+> make
+> ./server <port>
+
+How to run client
+
+> cd client
+> mkdir	build
+> cd build
+> cmake	../
+> make
+> ./client <serverIP> <serverPort> <listeningPort>
