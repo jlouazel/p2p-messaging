@@ -1,0 +1,21 @@
+What are the limitations of this solution? Are there cases where your service will not work?
+
+    - If the server is stopped, the clients ports will not be closed properly.
+    - The server is needed to keep clients alive.
+    - Only strings can be sent / received.
+    - Strings can be up to 1024 char maximum.
+    - An error while connecting to someone exits the program.
+
+
+Does your system scale? Where is the bottleneck? How many users can it support?
+
+    - Server run on only one thread.
+    - Clients are limited to 10 by a variable.
+
+What is the attack surface on the system? How could you reduce it?
+
+    - Clients messages are not checked.
+
+Compatibility: which OS/browsers/systems is our service compatible with?
+
+    - Only compatible with MacOS and Linux based systems.
