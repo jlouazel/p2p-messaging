@@ -1,9 +1,9 @@
 #include "Client.h"
 
+#include <cstring>
+#include <cerrno>
 #include <iostream>
 #include <netdb.h>
-#include <errno.h>
-#include <unistd.h>
 #include <thread>
 
 #include "../common/Tools.h"

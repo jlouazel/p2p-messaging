@@ -1,9 +1,10 @@
 #include "Server.h"
 
+#include <cstring>
+#include <cerrno>
 #include <iostream>
 #include <string>
 #include <unistd.h>
-#include <errno.h>
 
 Server::Server(int port) :
     IServer(port)

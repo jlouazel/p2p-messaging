@@ -1,8 +1,9 @@
 #include "IServer.h"
 
-#include <sys/select.h>
-#include <iostream>
 #include <arpa/inet.h>
+#include <cstring>
+#include <iostream>
+#include <sys/select.h>
 
 IServer::IServer(int port) :
     m_maxClients(10)
